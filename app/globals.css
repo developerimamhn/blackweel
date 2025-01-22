@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Solid:wght@100;300;400;900&family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Noto+Sans+Avestan&family=Nova+Mono&family=Quicksand:wght@300..700&family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Solid:wght@100;300;400;900&family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Noto+Sans+Avestan&family=Nova+Mono&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Sigmar+One&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0C0C0C;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0C0C0C;
+    --foreground: #0C0C0C;
   }
 }
 
@@ -18,4 +22,300 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+@layer base {
+  .Link-manu-bar{ 
+    @apply hover:text-[#D35D33] text-[11px] sm:text-[12px] xl:text-[13px] 2xl:text-[14px] duration-300
+  }
+  .contactusbtn{
+    @apply px-[15px] sm:px-[16px] md:px-[18px] lg:px-[20px] xl:px-[22px] 2xl:px-[24px] py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[18px] 2xl:py-[20px]
+  }
+  .contactusbtn{
+    @apply hover:bg-[#fff] hover:border-[#EC784F] duration-300 hover:text-[#EC784F] text-[11px] sm:text-[12px] xl:text-[13px] 2xl:text-[14px]
+  }
+  .Construction{
+    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] mb-[15px] sm:mb-[18px] md:mb-[22px] lg:mb-[26px] xl:mb-[28px] 2xl:mb-[32px]
+  }
+  .Printing{
+    @apply text-[35px] sm:text-[46px] md:text-[58px] lg:text-[60px] xl:text-[74px] 2xl:text-[84px]
+  }
+  .buttonstli{
+    @apply py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[18px] 2xl:py-[20px] px-[16px] sm:px-[18px] md:px-[20px] lg:px-[24px] xl:px-[28px] 2xl:px-[32px] mt-[20px] md:mt-[30px] xl:mt-[40px]
+  }
+  .catagroyimage{
+    @apply text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px] xl:text-[50px] 2xl:text-[54px]
+  }
+  .revoluction{
+    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]
+  }
+  .aboutus{
+    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]
+  }
+  .contaienraas3d{
+    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]
+  }
+}
+
+@layer utilities {
+  .fucdercdd{
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-size: clamp(10px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .sailfzsodnd{
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .sliderButton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: clamp(8px, 1vw, 16px);
+    border: 1px solid rgba(12, 12, 12, 0.10);
+  }
+  .sliderButton span{
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 26px */
+  }
+  .customaioruteam{
+    color: #434040;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+  .deputehof{
+    color: #655E5C;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .kasperlas{
+    color: #0C0C0C;
+    font-family: "Open Sans";
+    font-size: clamp(18px, 2vw, 23px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .prointeradvaf{
+    color: #3E3B3A;
+    font-family: "Open Sans";
+    font-size: clamp(10px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+  }
+.scrollbar-custom::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: none;
+}
+
+  .constructionparea{
+    color: #E4E1E1;
+    font-family: "Inter";
+    font-size: clamp(10px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .adfeer {
+    position: relative;
+  }
+  
+  .adfeer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background: #EC784F;
+    height: 4px;
+    width: 0; /* Initial width is 0 */
+    transition: width 0.3s ease-in-out; /* Animation for width change */
+  }
+  
+  .adfeer::before {
+    width: 100%; /* Width becomes 100% on hover */
+  }
+  .ecofir{
+    font-family: "Inter";
+    font-size: clamp(13px, 2vw, 19px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    padding-left: clamp(10px, 2vw, 15px);
+    padding-right: clamp(13px , 2vw, 20px);
+  }
+  .conceoferes{
+    color: #E4E1E1;
+    font-family: "Inter";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+  .buildp{
+    color: #655E5C;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    font-size: clamp(10px, 2vw, 16px);
+  }
+  .contaienraas3d{
+    color: #23201F;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+  }
+  .threeime{
+    background: #FFF;
+    padding: clamp(17px,2vw,32px);
+  }
+  .catagroyimagess{
+    color: #23201F;
+    font-family: "Open Sans";
+    font-size: clamp(17px,2vw,32px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+  }
+  .aboutus{
+    color: #EC784F;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 31.2px */
+    text-transform: uppercase;
+    
+  }
+  .blackwell{
+    color: #3E3B3A;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: clamp(17px,2vw,32px);
+  }
+  .usingptag{
+    color: #D3D0CF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    font-size: clamp(10px, 2vw, 16px);
+  }
+  .revoluction{
+    color: #FFFCFB;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+  }
+  .catagroyimage{
+    color: #FFFCFB;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%; 
+  }
+  .buttonstli{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 8px;
+    color: #0C0C0C;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    border-bottom: 1px solid #FFF;
+    background: #FFF;
+  }
+  .Printing{
+    color: #FFF;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    line-height: 116%;
+  }
+  .Construction{
+    color: #FFF;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+  .Link-manu-bar{
+    color: #0C0C0C;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .contactusbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #EC784F;
+    backdrop-filter: blur(2px);
+    color: #FFF;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+  }
 }
