@@ -8,7 +8,7 @@ const HeroArea = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,_rgba(12,_12,_12,_0.08)_0%,_#0C0C0C_100%)] -z-[1]" />
             <div className="absolute top-0 left-0 w-full h-full -z-[3] bg-[linear-gradient(180deg, rgba(12, 12, 12, 0.08) 0%, #0C0C0C 100%)]">
                     <video
-                src={heroVideo} // Use the imported video file
+                src={heroVideo} 
                 className="size-full object-cover absolute top-0"
                 autoPlay
                 loop

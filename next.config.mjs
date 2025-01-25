@@ -1,7 +1,8 @@
 import withVideos from 'next-videos';
 
-const nextConfig = {
-  // Your Next.js config options
-};
+const nextConfig = withVideos({
+  // Add your Next.js configuration here
+  reactStrictMode: true, // Example configuration
+});
 
-export default withVideos(nextConfig);
+export default nextConfig;
