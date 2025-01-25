@@ -31,8 +31,6 @@ const Page1 = () => {
                             <p className='usingptag'>Lowering costs by as much as 35% and <br/> cutting waste by 60%</p>
                         </div>
                     </div>
-                    <div></div>
-                    <div></div>
                 </div>
             </div>
         </div>

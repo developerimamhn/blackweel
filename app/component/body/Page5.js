@@ -11,11 +11,10 @@ import image10 from "../image/image10.png";
 import image11 from "../image/image11.png";
 
 const Page5 = () => {
-    const [activeButton, setActiveButton] = useState(null); // Track active button
+    const [activeButton, setActiveButton] = useState(null); 
 
     const handleToggle = (buttonId) => {
-      setActiveButton(buttonId); // Set the active button ID
-      // Slider navigation logic can go here
+      setActiveButton(buttonId); 
     };
     return (
         <div className='bg-[#F9F9F9] py-[40px] sm:py-[50px] lg:py-[70px] 2xl:py-[100px]'>
@@ -24,7 +23,6 @@ const Page5 = () => {
                     <h2 className="catagroyimage pb-[8px] lg:pb-[10px] 2xl:pb-[15px] !text-[#0C0C0C] text-[25px] sm:text-[28px] md:text-[30px] lg:text-[35px] xl:text-[44px] 2xl:text-[34px] !leading-[130%] lg:w-[300px] xl:w-[400px] 2xl:w-[500px]">Our <span className='font-[600]'>Team</span></h2>
                     <p className='customaioruteam text-center lg:text-left'>Our team is a dynamic group of professionals with diverse expertise in construction, 3D printing, engineering, and design.</p>
                 </div>
-                
             </div>
             <div className='relative'>
                 <Swiper
@@ -53,9 +51,9 @@ const Page5 = () => {
                           spaceBetween: 16,
                         },
                       }} 
-                    loop={true}
+                    // loop={true}
                     // autoplay={{
-                    //     delay: 1000,
+                    //     delay: 2000,
                     //     disableOnInteraction: false,
                     // }}
                     className="mySwiper cursor-pointer "
