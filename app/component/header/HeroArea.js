@@ -1,5 +1,6 @@
 import React from 'react';
 import heroVideo from './video.mp4';
+import imagevideo from './image2.png';
 
 
 const HeroArea = () => {
@@ -13,7 +14,7 @@ const HeroArea = () => {
                 autoPlay
                 loop
                 muted
-                poster="./image2.png"
+                poster={imagevideo}
             />
             </div>
 
